@@ -1,0 +1,27 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+
+# Raw videos & generated data (submitted separately, not in repo)
+datasets/
+data/
+*.mp4
+*.zip
+
+# Training outputs & weights
+runs/
+*.pt
+
+# Large / regenerable report outputs (compressed copies live in reports/figures/)
+reports/contact_sheets/
+reports/teacher_comparison/
+reports/clip_reclass/
+reports/evaluation*/error_examples/
+reports/evaluation*/ultralytics_val/
+reports/label_review_diff*.csv
+
+# Assignment document & OS files
+*.docx
+~$*
+.DS_Store
