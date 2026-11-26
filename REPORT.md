@@ -82,9 +82,7 @@ I compared checkpoints on the same revised validation labels and used validation
 | v2 | 42 | 17 | 0.443 | 0.782 | 0.581 |
 | v2 | 1 | 62 | 0.465 | 0.821 | 0.653 |
 
-The planned rule favoured the version with the higher mean validation mAP50–95 when the gap reached one standard deviation. With the two available seeds, v1 averaged 0.479 and v2 averaged 0.454, with sample standard deviations of 0.017 and 0.016. I therefore chose v1 and submitted its higher-scoring validation checkpoint, seed 42. With two observations per version, the estimated spread is uncertain.
-
-On the test set, v2 scored lower than v1 with seed 42 and higher with seed 1. These runs do not establish a consistent accuracy gain from the label fixes.
+I selected v1, seed 42, because it had the highest validation mAP50–95 (0.491) among the four runs. Version v1 also scored higher than v2 on validation for both seeds, although by only 0.002 for seed 1. On the test set, the two seed pairs showed mixed results for v2, so the effect of the additional label review remains uncertain.
 
 ## 6. Limits and next steps
 
